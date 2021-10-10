@@ -1,12 +1,11 @@
 Package: hw04pcon777
-Title: What the Package Does (One Line, Title Case)
+Title: Vectify: Returns elements and visualizations of vectors
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Connor", "Haggerty", , "ch8384a@student.american.edu", role = c("aut", "cre"),
+           ))
+Description: : Returns nth element of a sequence and returns line plot of entered values
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
