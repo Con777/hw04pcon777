@@ -3,10 +3,13 @@ Title: Vectify: Returns elements and visualizations of vectors
 Version: 0.0.0.9000
 Authors@R: 
     person("Connor", "Haggerty", , "ch8384a@student.american.edu", role = c("aut", "cre"),
-           ))
+           )
 Description: : Returns nth element of a sequence and returns line plot of entered values
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
+Suggests: 
+    spelling
+Language: en-US
