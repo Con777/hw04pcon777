@@ -1,0 +1,17 @@
+## code to prepare `my_data2` dataset goes here
+
+my_data <- tibble::tribble(
+  ~x, ~y, ~z, ~n,
+  6, 2, 3, 2,
+  6, 2, 3, 3,
+  6, 2, 3, 4,
+  6, 2, 3, 5,
+  6, 2, 3, 6,
+  6, 2, 3, 7,
+  6, 2, 3, 9,
+  6, 2, 3, 11,
+  6, 2, 3, 13,
+  6, 2, 3, 15,
+  6, 2, 3, 16)
+
+usethis::use_data(my_data2, overwrite = TRUE)
