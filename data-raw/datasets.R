@@ -1,4 +1,4 @@
-#' @title my_data2
+#' @title my_data an my_data2
 #' @description data frame to be imported for testing functions
 #' @format A data frame with 11 rows and 4 variables:
 #' \describe{
@@ -8,8 +8,21 @@
 #'   \item{\code{n}}{double}
 #'}
 #'@source homework dataset example
-"my_data2"
-## code to prepare `my_data2` dataset goes here
+"my_data"
+## code to prepare `my_data` dataset goes here
+my_data <- tibble::tribble(
+  ~x, ~y, ~z, ~n,
+  4, 4, 3, 2,
+  4, 4, 3, 3,
+  4, 4, 3, 4,
+  4, 4, 3, 5,
+  4, 4, 3, 6,
+  4, 4, 3, 7,
+  4, 4, 3, 9,
+  4, 4, 3, 11,
+  4, 4, 3, 13,
+  4, 4, 3, 15,
+  4, 4, 3, 16)
 
 my_data2 <- tibble::tribble(
   ~x, ~y, ~z, ~n,
@@ -25,4 +38,4 @@ my_data2 <- tibble::tribble(
   6, 2, 3, 15,
   6, 2, 3, 16)
 
-usethis::use_data(my_data2, overwrite = TRUE, internal = TRUE, compress = 'bzip2')
+usethis::use_data(my_data, my_data2, overwrite = TRUE, internal = TRUE)
