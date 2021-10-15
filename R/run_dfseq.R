@@ -13,13 +13,19 @@
 run_dfseq <- function(df){
   stopifnot(is.data.frame(df))
   df$output <- 0
-for (i in seq_along(nrow(df)))
+for (i in seq_along(df$n)){
   vec1 <- df[1:(length(df)-2)]
   vec1 <- as.numeric(unlist(vec1))
   vec1 <- split(vec1, f = 1:nrow(df))
-  df$output[[i]] <- myseq_n(x = vec1[[i]], n = df$n[[i]])
-  # n <- as.numeric(df$n)
-  # n <- split(n, f = nrow(df))
-  # ggplot2::ggplot(mapping = aes(x = n, y = output))
-  df
+  df$output[[i]] <- round(myseq_n(x = vec1[[i]], n = df$n[[i]]), digits = 3)
+  output <- as.numeric(df$output)
+  n <- as.numeric(df$n)
+  plot <- ggplot2::ggplot(mapping = ggplot2::aes(x = n, y = output))+
+    ggplot2::geom_line() +
+    ggplot2::ggtitle(label = paste0('My Sequence:', list(output))) +
+    ggplot2::ylab('Sequence Value')
 }
+  plot
+
+}
+

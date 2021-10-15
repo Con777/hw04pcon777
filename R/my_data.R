@@ -1,14 +1,12 @@
-#' \name{my_data_sequences}
-#' \docType{data}
-#' \alias{my_data}
-#' \title{Lengths of Major North American Rivers}
-#' \description{
-#'   data frame to be imported for testing functions
-#' }
-#' \usage{sequences}
-#' \format{A vector containing 141 observations.}
-#' \source{hw04 instructions}
-#' \keyword{datasets}
+#' my_data_sequences
+#' @docType data
+#' @aliases my_data
+#' Description
+#' Data frame to be imported for testing functions.
+#'
+#' @return a data frame
+#' @source hw04 instructions
+#' @keywords datasets
 "my_data"
 ## code to prepare `my_data` dataset goes here
 my_data <- tibble::tribble(
@@ -40,3 +38,5 @@ my_data2 <- tibble::tribble(
   6, 2, 3, 16)
 
 usethis::use_data(my_data, my_data2, overwrite = TRUE, internal = TRUE)
+
+

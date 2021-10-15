@@ -1,13 +1,12 @@
-#' @title my_data an my_data2
-#' @description data frame to be imported for testing functions
-#' @format A data frame with 11 rows and 4 variables:
-#' \describe{
-#'   \item{\code{x}}{double}
-#'   \item{\code{y}}{double}
-#'   \item{\code{z}}{double}
-#'   \item{\code{n}}{double}
-#'}
-#'@source homework dataset example
+#' my_data_sequences
+#' @docType data
+#' @aliases my_data
+#' Description
+#' Data frame to be imported for testing functions.
+#'
+#' @return a data frame
+#' @source hw04 instructions
+#' @keywords datasets
 "my_data"
 ## code to prepare `my_data` dataset goes here
 my_data <- tibble::tribble(
